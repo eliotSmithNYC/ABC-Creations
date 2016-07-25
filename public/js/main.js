@@ -28,7 +28,13 @@ function setDynamicStyles() {
 		
 
 	function setTopSectionHeight() {
-		
+		var $topSection = $('#top-section');
+		var $arrowRow = $('.arrow-row');
+		console.log($arrowRow.height());
+		var topSectionHeight = windowHeight + $arrowRow.height() + 20;
+		$topSection.css('height', topSectionHeight);
+
+
 	}
 
 }
